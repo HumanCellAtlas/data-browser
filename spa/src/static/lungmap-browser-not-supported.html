@@ -1,0 +1,138 @@
+<style>
+    body {
+        margin: 0;
+    }
+
+    body, main {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    header {
+        background-color: #005295;
+        box-sizing: border-box;
+        height: 60px !important;
+        min-height: 60px;
+        width: 100%
+    }
+
+    header img {
+        height: 30px;
+        max-height: 40px;
+        padding: 15px 0;
+    }
+
+    .wrapper {
+        box-sizing: border-box;
+        margin: 0 auto;
+        max-width: 1200px;
+        padding: 0 16px;
+        width: 100%;
+    }
+
+    main {
+        flex: 1;
+    }
+
+    .title span {
+        display: block;
+        font-family: "din-2014",sans-serif;
+        font-size:24px;
+        font-weight:500;
+        line-height:38px;
+        padding: 19px 0;
+    }
+
+    .tab {
+        border-bottom: 1px solid #ccc;
+        flex:none;
+        height:30px;
+    }
+
+    .not-supported {
+        flex:1;
+        height:100%;
+    }
+
+    .not-supported p {
+        font-family:"Montserrat",sans-serif;
+        font-size:16px;
+        font-weight:300;
+        line-height:28px;
+        margin: 0;
+        padding:36px 0;
+    }
+
+    footer {
+        background-color:#003662;
+        height:96px;
+    }
+
+    @media screen and (min-width: 400px) {
+
+        .wrapper {
+            padding: 0 30px;
+        }
+
+        .title span {
+            font-size:34px;
+        }
+    }
+</style>
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>LungMAP Data Browser</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-icon-180x180.png">
+    <link rel="shortcut icon" href="/assets/images/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/assets/images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Material Icons Font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- DIN font -->
+    <link rel="stylesheet" href="https://use.typekit.net/qhb0geh.css">
+    <!-- Montserrat font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700">
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <img src="/assets/lungmap/images/logos/logo-lungmap.png">
+        </div>
+    </header>
+    <main>
+        <div class="wrapper title">
+            <span>Browser Not Supported</span>
+        </div>
+        <div class="tab"></div>
+        <div class="not-supported">
+            <div class="wrapper">
+                <p>
+                    <span style="display: block">The LungMAP Data Browser supports recent versions of Chrome, Firefox, Safari and Edge on MacOS, Windows and Linux.</span>
+                </p>
+            </div>
+        </div>
+    </main>
+    <footer/>
+</body>
+</html>
